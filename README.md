@@ -1,4 +1,14 @@
-# agnoster.zsh-theme
+# agnoster-custom.zsh-theme
+
+# About this custom
+Changed the `prompt_context` to display only the user (`whoami`) and `prompt_dir` to display only current and 1 parent directory.
+
+An overview:
+
+![Custom display](custom.png)
+
+# Install (oh-my-zsh)
+Download `agnoster-custom.zsh-theme` and place it in theme directory (default: `~/.oh-my-zsh/themes`), change ZSH_THEME variable to `agnoster-custom`.
 
 A ZSH theme optimized for people who use:
 
