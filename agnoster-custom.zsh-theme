@@ -85,7 +85,7 @@ prompt_context() {
   local user=`whoami`
 
   if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CONNECTION" ]]; then
-    prompt_segment $PRIMARY_FG default " %(!.%{%F{yellow}%}.)$user@%m "
+    prompt_segment $PRIMARY_FG default " %(!.%{%F{yellow}%}.)$user "
   fi
 }
 
@@ -116,7 +116,7 @@ prompt_git() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $PRIMARY_FG ' %~ '
+  prompt_segment blue $PRIMARY_FG ' %2~ '
 }
 
 # Status:
